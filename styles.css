@@ -1,0 +1,14 @@
+/*   Ex 9 */
+
+div.card > img {
+    height: 150px;
+    object-fit: cover;
+}
+
+/*   Ex 11 */
+
+footer {
+    background-color: rgb(226, 141,43);
+    padding: 20px;
+  }
+

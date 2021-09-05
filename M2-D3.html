@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
-    crossorigin="anonymous">
-
     <!--
 
         ASSIGNMENT RULES
@@ -26,17 +21,13 @@
 
 
         Ex 1) Implement a navigation bar, connected to all the sections of the page. 
-
         Ex 2) Add a logo into the navigation bar (can be any image)
-
         Ex 3) Add a Jumbotron section in which you'll have the name and the claim of the tour operator
-
         Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
          In this section you should have:
             - 4 destinations per row when the screen is very large
             - 3 destinations per row when you are on a tablet (or a smaller window)
             - 2 destinations per row when you are on a small screen
-
 
         Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
             In this section you should have:
@@ -49,7 +40,6 @@
             - 33% with Name, dates, price and a short description
 
         Ex 7) Make the "Deal of the day" section disappear on a mobile screens
-
         Ex 8) Add to the Welcome Summer destinations section a large shadow
         Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards
         Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
@@ -62,187 +52,6 @@
         Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
         Ex 16) Create a function to delete all "cards" from the page
       -->
-      <style>
-        footer {
-          background-color: rgb(226, 141,43);
-          padding: 20px;
-        }
-      </style>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      
-      <a class="navbar-brand" href="#">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
-          <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
-        </svg>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">Destinations</a>
-          <a class="nav-link" href="#">Pricing</a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-      <h1>Traveling Agency</h1>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Summer 2021</h1>
-          <p class="lead">Find the perfect locations for your next unforgivable summer. 20% of discount if you book within 30 days !</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <h5>Deal of the Week</h5>
-      <div class="row"> 
-        
-        <div class="col-6 col-md-4 col-lg-3">
-          San Jose, Costarica 
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          Paris, France
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          Tokyo, Japan
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          Sydney, Australia
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h5>Welcome Summer</h5>
-      <div class="row shadow-lg p-3 mb-5 bg-white rounded"> 
-        <div class="col-6 col-md-4 col-lg-2">
-          Milan, Italy
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          London, UK
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          Canary Island, Spain
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          New York, USA
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          Rio, Brazil
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          Cairo, Egypt
-        </div>
-      </div>
-      </div>
-<!--
-
-        Ex 6) Implement a "Deal of the day" section. In this section you'll have:
-            - 66% of the page with a picture of the destination
-            - 33% with Name, dates, price and a short description
-
--->
-
-<div class="container d-none d-md-block">
-  <h5>Deal of the day</h5>
-  <div class="row"> 
-    <div class="col-8">
-      <img class="img-fluid" src="havana.jpg" >
-    </div>
-    <div class="col-4">
-      <p>Havana, Cuba<br>
-      23. - 27. June 2021<br>
-      price $ 1,000 <br>
-      Description: A city trapped in time, Havana captures the imagination like no other. 
-      Faded glamour meets careful colonial-era reconstruction with a backdrop of irresistible color.  
-      Walk El Malecón, the walkway bordering the ocean; visit Old Havana and the Catedral de San Cristóbal; and listen for salsa music, open-air bazaars and parties that last all night.<br>
-     </p> 
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <h5>Last Minute</h5>
-  <div class="row">
-  <div class="col-6 col-md-3">
-  <div class="card"">
-    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/a5/77.jpg" class="card-img-top" alt="Los Angeles">
-    <div class="card-body">
-      <p class="card-text">Los Angeles, USA</p>
-    </div>
-  </div>
-</div>
-
-<div class="col-6 col-md-3">
-  <div class="card"">
-    <img src="https://cdn.getyourguide.com/img/location/5ffeb5505f150.jpeg/88.jpg" class="card-img-top img-fluid" alt="Florence">
-    <div class="card-body">
-      <p class="card-text">Florene, Italy</p>
-    </div>
-  </div>
-</div>
-
-<div class="col-6 col-md-3">
-  <div class="card"">
-    <img src="https://www.cia-france.it/media/1558/parcarou1_720x500.jpg" class="card-img-top" alt="Paris">
-    <div class="card-body">
-      <p class="card-text">Paris, France</p>
-    </div>
-  </div>
-</div>
-
-<div class="col-6 col-md-3">
-  <div class="card">
-    <img src="https://image.arrivalguides.com/415x300/04/8bd32beb344d4ac81797e03c60713644.jpg" class="card-img-top" alt="Copenhagen">
-    <div class="card-body">
-      <p class="card-text">Copenhagen, Danmark</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="container">
-  <h5>Testimonials</h5>
-  <div class="row"> 
-    
-    <div class="col-6 ">
-      We had a last minute trip to London and had a voucher to use which covered a number of walking tours. George responded to all communications really quickly and so we booked with him.
-George was very prompt for the meet up and it turned out we were the only people on the tour (not many tourists in London at the moment!)
-Great tour, learnt lots, saw bits of London we'd never seen before and all disagreed at the end who the ripper was!
-<br><i>Wendy Davis </i><br>
-    </div>
-    <div class="col-6 ">
-      It was great to hear all the stories, it made the walking effortless despite my leg was hurting, time went by pretty quickly. It's not mainly spooky, it's more of nice parts of London history at the spots where they happened and tied to amusing ghost sightenings.
-      Our guide knew everything about London and we did test him. He talked loud and clear and made sure we all understood him.
-<br><i>Ryan B</i><br>
-    </div>
-
-  </div>
-</div>
-
-<footer>
-<div class="container">
-  Copyright © Traveling Agency
-  <button>Contact Us</button>
-</div>
-</footer>
-
-    <script 
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
-crossorigin="anonymous"></script>
-
-
-  </body>
+  <body></body>
 </html>
